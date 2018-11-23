@@ -20,7 +20,7 @@ public class ExampleController {
 		System.out.println(exampleService.tumYoneticileriBul().toString());
 		model.addObject("owners", exampleService.tumYoneticileriBul());
 		model.addObject("ornek", "Gönderilen Değer");
-		model.setViewName("yoneticiler");
+		model.setViewName("owners");
 		return model;
 		
 	}

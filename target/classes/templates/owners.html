@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table border="2">
+			<thead>
+				<tr style="color:red">
+				 <td width="25px">ID</td>
+				 <td width="250px">AD</td>
+				 <td width="205px">SOYAD</td>
+		    	</tr>
+			</thead>
+			<th:block th:each="owner:${owners}">
+			<tr>
+				<td th:text="${owner.id}"/>
+				<td th:text="${owner.ad}"/>
+				<td th:text="${owner.soyad}"/>				
+			</tr>
+		</th:block>
+	</table>
+
+</body>
+</html>
