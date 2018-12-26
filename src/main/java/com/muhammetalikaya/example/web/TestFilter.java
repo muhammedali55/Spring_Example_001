@@ -8,10 +8,11 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@WebFilter("/testservlet")
 public class TestFilter implements Filter {
 
     /**
