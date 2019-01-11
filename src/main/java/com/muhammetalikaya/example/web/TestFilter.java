@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 
 import org.springframework.stereotype.Component;
 
-@WebFilter("/testservlet")
+@WebFilter("/OrnekServlet")
 public class TestFilter implements Filter {
 
     /**
