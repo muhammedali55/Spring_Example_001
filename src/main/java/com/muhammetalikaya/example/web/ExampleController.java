@@ -14,6 +14,13 @@ public class ExampleController {
 	@Autowired
 	private ExampleService exampleService;
 	
+	@RequestMapping(value= {"/","/logout2"})
+	public ModelAndView logout() {
+		ModelAndView model = new ModelAndView();
+		model.setViewName("logout2");
+		return model;		
+	}
+	
 	@RequestMapping("/owners")
 	public ModelAndView getOwners() {
 		ModelAndView model = new ModelAndView();
